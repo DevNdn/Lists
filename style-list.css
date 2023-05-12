@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lobster&family=Permanent+Marker&family=Roboto+Condensed&family=Yeseva+One&display=swap');
+
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,20 +12,39 @@
 }
 
 body {
-  background-color: rgb(61, 60, 60);
   width: 100vw;
   position: absolute;
+  
+  background-image: url(image/bckimg03.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 header {
-  background-color: lightpink;
-  padding: 10px;
+  background-color: #0D0D0D;
   font-size: 1.8rem;
+  text-align: center;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 20px;
+  
 }
 
 h1 {
-  background-color: coral;
+  background-color: #F24171;
+  font-family: 'Nerko One', cursive;
   text-align: center;
+  border-radius: 10px;
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+header > p {
+  color: #F27999;
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-size: 1.2rem;
+  padding-top: 15px;
 }
 
 main {
@@ -29,29 +53,24 @@ main {
   
 }
 
-.ul-container {
-  background-color: lightgreen;
+.ul-container, .ol-container {
+  background-color: #85C8F2;
+  
   margin: auto;
   padding: 15px;
-  list-style: square inside;
   width: 500px;
   height: 500px;
   display: inline-block;
   position: relative;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.493);
+  
+  list-style: square inside;
   
 }
 
-.ol-container {
-  background-color: mediumslateblue;
-  margin: auto;
-  padding: 15px;
-  list-style-position: inside;
-  width: 500px;
-  height: 500px;
-  position: relative;
-  display: inline-block;
-  
-}
 
 .ul-list {
   border: 1px solid black;
