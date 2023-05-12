@@ -71,14 +71,15 @@ main {
   
 }
 
-h2 {
-  color: #8111dd;
+h2, h3 {
+  color: #000000;
   text-align: center;
   text-decoration: underline;
   font-size: 1.7rem;
   font-family: 'Nerko One', cursive;
-  
+  background-image: linear-gradient(to bottom, #8111dd 0%, #F24171 50%, #8111dd 100%);
   padding: 10px;
+  border-radius: 15px;
 }
 
 h2 > p {
@@ -87,7 +88,7 @@ h2 > p {
 }
 
 .ul-title, .ol-title {
-  color: #8111dd;
+  color: #000000;
   font-family: 'Nerko One', cursive;
   font-size: 1.6rem;
   text-align: center;
@@ -109,11 +110,34 @@ hr {
   font-size: 1.2rem;
   display: list-item;
   columns: 2;
+  border-radius: 15px;
 }
 
 li {
   padding: 5px;
   text-align: justify;
   
+}
+
+footer {
+  color: white;
+  background-color: #0D0D0D;
+  text-align: center;
+  padding: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
+  background-color:  #f24170cb;
+  padding: 10px;
+  border-radius: 15px;
+  width: 50px;
+  border: 1px solid #8111dd;
+
 }
 
