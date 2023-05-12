@@ -4,10 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lobster&family=Permanent+Marker&family=Roboto+Condensed&family=Yeseva+One&display=swap');
 
+/* :root {
+  --h2-font-size: varfont-size: clamp(0.8em, 2em, 4em);
+} */
 
 * {
   margin: 0px;
   padding: 0px;
+  word-wrap: break-word;
+  word-break: keep-all;
 
 }
 
@@ -24,6 +29,7 @@ body {
 header {
   background-color: #0d0d0de5;
   font-size: 1.8rem;
+  width: 100%;
   text-align: center;
   padding: 10px 10px 20px 10px;
   margin-bottom: 20px;
@@ -46,24 +52,43 @@ header > p {
   color: #F27999;
   text-align: center;
   font-family: 'Nerko One', cursive;
-  font-size: 1.2rem;
   padding-top: 15px;
   text-decoration: underline;
 }
 
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+a.header-link:hover {
+  color:black;
+  background-color: #F24171;
+  padding: 5px 9px 5px 9px;
+  border-radius: 5px;
+  width: 70px;
+  border: 1px solid #8111dd;
+  text-decoration: underline;
+  box-shadow: inset 0px 0px 3px 1px black;
+
+}
+
 main {
-  display: flex;
   padding: 10px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap permitiu fazer a quebra das tabelas nos display flex */
   
 }
 
 .ul-container, .ol-container {
   background-color: #85C8F2;
-  
   margin: auto;
+  margin-bottom: 25px;
   padding: 15px;
   width: 500px;
-  height: 650px;
+  height: 700px;
   display: inline-block;
   position: relative;
 
@@ -75,11 +100,13 @@ main {
   
 }
 
+
+
 h2, h3 {
   color: #000000;
   text-align: center;
   text-decoration: underline;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: 'Nerko One', cursive;
   background-image: linear-gradient(to bottom, #8111dd 0%, #F24171 50%, #8111dd 100%);
   padding: 10px;
@@ -90,10 +117,19 @@ h2, h3 {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.493);
 }
 
+h3 {
+  background-image: url(image/bckimg05.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+  box-shadow: inset 0px 3px 6px 3px rgba(0, 0, 0, 0.493);
+}
+
 h2 > p {
   text-align: justify;
-  
-  
+  font-size: clamp(1rem, 1em, 3.5rem);
+
 }
 
 .ul-title, .ol-title {
@@ -109,26 +145,30 @@ h2 > p {
   
 }
 
-hr {
-  margin: 15px 0px 15px 0px;
-}
 
 .ul-list, .ol-list {
   border: 1px solid black;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 1em;
+  font-weight: bold;
   display: list-item;
   columns: 2;
   border-radius: 10px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.493);
   height: 200px;
+
+  background-image: url(image/bckimg05.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+  background-image: linear-gradient(to bottom, #8111dd 0%, #F24171 50%, #8111dd 90%);
 }
 
 li {
   padding: 5px;
   text-align: justify;
-  
-  
+  text-decoration: underline;
 }
 
 footer {
@@ -136,8 +176,11 @@ footer {
   background-color: #0d0d0de5;
   text-align: center;
   padding: 15px;
-  margin-bottom: 10px;
+  width: 500px;
+  position: relative;
+  margin: auto;
   box-shadow: 0px 6px 6px 2px rgba(0, 0, 0, 0.493);
+  border-radius: 10px;
 }
 
 a {
