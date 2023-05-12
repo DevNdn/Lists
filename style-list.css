@@ -59,7 +59,7 @@ main {
   margin: auto;
   padding: 15px;
   width: 500px;
-  height: 500px;
+  height: 550px;
   display: inline-block;
   position: relative;
 
@@ -71,15 +71,49 @@ main {
   
 }
 
-
-.ul-list {
-  border: 1px solid black;
-  padding: 20px;
+h2 {
+  color: #8111dd;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.7rem;
+  font-family: 'Nerko One', cursive;
+  
+  padding: 10px;
 }
 
-.ol-list {
+h2 > p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.ul-title, .ol-title {
+  color: #8111dd;
+  font-family: 'Nerko One', cursive;
+  font-size: 1.6rem;
+  text-align: center;
+  word-spacing: 15px;
+  letter-spacing: 3px;
+
   border: 1px solid black;
-  padding: 20px;
-  margin-top: 15px;
+  padding: 30px 5px 30px 5px;
   
 }
+
+hr {
+  margin: 15px 0px 15px 0px;
+}
+
+.ul-list, .ol-list {
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 1.2rem;
+  display: list-item;
+  columns: 2;
+}
+
+li {
+  padding: 5px;
+  text-align: justify;
+  
+}
+
