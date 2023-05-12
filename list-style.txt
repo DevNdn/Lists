@@ -1,0 +1,7 @@
+> É responsável por formatar os bullets (símbolos dos itens) que aparecem nas listas (ul/ol);
+
+Espécies:
+  a. list-style-type: bullet em si;
+  c. list-style-position: dentro ou fora da lista;
+  b. list-style-image: trocar o símbolo da lista.
+      >> list-style: type position image <<
